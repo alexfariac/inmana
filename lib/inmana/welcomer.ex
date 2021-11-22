@@ -1,5 +1,7 @@
 defmodule Inmana.Welcomer do
-  def welcome(%{"name" => name, "age" => age}) when is_integer(age) do
+  def welcome(%{"name" => name, "age" => age}) do
+    age = String.to_integer(age)
+
     name
     |> String.trim()
     |> String.downcase()

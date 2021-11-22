@@ -5,8 +5,10 @@ defmodule InmanaWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", InmanaWeb do
+  scope "/api/inmana", InmanaWeb do
     pipe_through :api
+
+    get "/welcome", WelcomeController, :index
   end
 
   # Enables LiveDashboard only for development

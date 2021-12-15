@@ -1,4 +1,5 @@
 # Inmana
+Simple Elixir + Phoenix web API project for Study purposes
 
 To start your Phoenix server:
 
